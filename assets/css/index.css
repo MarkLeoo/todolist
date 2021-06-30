@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&display=swap");
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Castoro, serif;
+}
+body {
+    background-color: rgb(254, 233, 240);
+}
+.myTasks {
+    margin: 50px auto;
+    background-color: rgb(245, 248, 249);
+    width: 350px;
+    box-shadow: grey 0px 0px 6px;
+    overflow: hidden;
+    line-height: 2rem;
+    letter-spacing: 1px;
+}
+.myTasks__img img {
+    width: 100%;
+    display: block;
+}
+.Enter_Activity {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.Enter_Activity #btnAddActivity {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid rgb(222, 81, 122);
+    background-color: white;
+    position: absolute;
+    right: -1px;
+    top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Enter_Activity #btnAddActivity i {
+    color: rgb(222, 81, 122);
+    font-weight: bold;
+    font-size: 15px;
+}
+.Enter_Activity #Activity {
+    outline: none;
+    padding: 7px 13px;
+    width: 95%;
+    background-color: rgb(231, 133, 158);
+    border: none;
+    color: white;
+}
+.Enter_Activity #Activity::placeholder {
+    color: white;
+}
+.Enter_Activity #btnAddActivity:focus {
+    outline: none;
+}
+.line-through {
+    margin: 20px 0px;
+}
+.tableTask {
+    position: relative;
+}
+#tblTaskDoing button {
+    border: none;
+    background: transparent;
+}
+#tblTaskDone button {
+    border: none;
+    background: transparent;
+}
+#tblTaskDoing button:focus {
+    outline: none;
+}
+#tblTaskDone button:focus {
+    outline: none;
+}
+.space {
+    height: 8px;
+}
+#tblTaskDone .fa-check-circle {
+    color: green;
+}
+.myTasks__img {
+    position: relative;
+    overflow: hidden;
+}
+.myTasks__img::after {
+    content: "";
+    position: absolute;
+    bottom: -35px;
+    left: -50px;
+    background-color: rgb(245, 248, 249);
+    height: 85px;
+    width: 120%;
+    display: block;
+    transform: rotate(10deg);
+}
+.myTasks__img::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(71, 32, 84, 0.2);
+    width: 100%;
+    height: 100%;
+}
